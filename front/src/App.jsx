@@ -6,6 +6,8 @@ import Library from './pages/Library';
 import Viewer from './pages/Viewer';
 import Profile from './pages/Profile';
 import AdminNews from './pages/AdminNews';
+import Shop from './pages/Shop';
+import ShopSuccess from './pages/ShopSuccess';
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -24,6 +26,8 @@ function AppRoutes() {
       <Route path="/viewer/:id" element={<PrivateRoute><Viewer /></PrivateRoute>} />
       <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
       <Route path="/admin/news" element={<PrivateRoute><AdminNews /></PrivateRoute>} />
+      <Route path="/shop" element={<PrivateRoute><Shop /></PrivateRoute>} />
+      <Route path="/shop/success" element={<PrivateRoute><ShopSuccess /></PrivateRoute>} />
     </Routes>
   );
 }

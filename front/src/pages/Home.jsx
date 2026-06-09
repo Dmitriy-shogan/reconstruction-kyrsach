@@ -20,6 +20,7 @@ const Home = () => {
           <Link to="/" className="nav-link active">Главная</Link>
           <Link to="/library" className="nav-link">Библиотека</Link>
           <Link to="/profile" className="nav-link">Профиль</Link>
+          <Link to="/shop" className="nav-link">Магазин</Link>
           {user?.role === 'ADMIN' && <Link to="/admin/news" className="nav-link">Админ-панель</Link>}
           <span style={{ color: 'var(--text-muted)', fontSize: '14px' }}>
             {user?.full_name} <span style={{ color: 'var(--primary)', fontWeight: '600' }}>({user?.role})</span>
