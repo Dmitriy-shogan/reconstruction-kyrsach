@@ -1,0 +1,13 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+uploads/
+*.db
+coverage/
+.pytest_cache/
+.vscode/
+.idea/
