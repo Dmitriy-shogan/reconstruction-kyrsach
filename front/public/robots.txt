@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /shop
+Allow: /library
+
+Disallow: /api/
+Disallow: /docs
+Disallow: /profile
+Disallow: /viewer/
+Disallow: /shop/success
+
+Sitemap: https://frontend-production-c998.up.railway.app/sitemap.xml
