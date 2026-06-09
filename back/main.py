@@ -12,7 +12,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="3D Reconstruction API", lifespan=lifespan)
 
 # Middleware для увеличения размера запроса
-@app.middleware("https")
+@app.middleware("http")
 async def increase_body_size(request, call_next):
     # Увеличиваем максимальный размер тела запроса до 100MB
     request._max_upload_size = 100 * 1024 * 1024
