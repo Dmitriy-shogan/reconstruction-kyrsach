@@ -23,3 +23,4 @@ const handleUpload = async (e) => {
     setUploading(false);
   }
 };
+export default Library;
