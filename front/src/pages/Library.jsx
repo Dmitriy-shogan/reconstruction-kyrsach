@@ -58,7 +58,7 @@ const Library = () => {
         {user?.role !== 'STUDENT' && (
           <div className="glass-card" style={{ padding: '16px 24px', marginBottom: '24px', background: 'rgba(99, 102, 241, 0.05)', border: '1px solid var(--primary)' }}>
             <p style={{ color: 'var(--primary)', fontSize: '14px', fontWeight: '500', margin: 0 }}>
-              👁️ Вы просматриваете все проекты группы (роль: {user?.role})
+              Вы просматриваете все проекты группы (роль: {user?.role})
             </p>
           </div>
         )}
