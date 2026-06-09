@@ -1,7 +1,10 @@
 import axios from 'axios';
 
+// ЖЁСТКО ПРОПИСАНО HTTPS - НИКАКИХ ПЕРЕМЕННЫХ ОКРУЖЕНИЯ
+const API_URL = 'https://backend-production-6392b.up.railway.app';
+
 const api = axios.create({
-  baseURL: '',  // ← ПУСТАЯ СТРОКА! Относительные пути
+  baseURL: API_URL,
 });
 
 api.interceptors.request.use((config) => {
